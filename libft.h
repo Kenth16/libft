@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:03:54 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/20 15:04:15 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:11:57 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 typedef struct s_list
 {

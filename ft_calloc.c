@@ -1,5 +1,5 @@
 /* ************************************************************************** */
-/*                                                                            */
+/*												                            */
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
@@ -12,17 +12,17 @@
 
 #include "libft.h"
 
-void    *ft_calloc(size_t nmemb, size_t n)
+void	*ft_calloc(size_t nmemb, size_t n)
 {
-    void    *s;
-    size_t  tot;
+	void	*s;
+	size_t	tot;
 
-    tot = nmemb * n;
-    if (nmemb != 0 && tot / nmemb != n)
-        return NULL;
-    s = malloc(tot);
-    if (!s)
-        return (0);
-    ft_memset(s, 0, tot);
-    return (s);
+	tot = nmemb * n;
+	if (nmemb != 0 && tot / nmemb != n)
+		return (NULL);
+	s = malloc(tot);
+	if (!s)
+		return (0);
+	ft_memset(s, 0, tot);
+	return (s);
 }

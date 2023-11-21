@@ -6,15 +6,15 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 14:59:40 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/20 14:59:41 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/21 17:48:11 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if(c >= 32 && c <= 126)
-        return 1;
-    return 0;
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

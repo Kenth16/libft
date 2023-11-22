@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 14:59:43 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 17:50:55 by navarre          ###   ########.fr       */
+/*   Created: 2023/11/22 11:39:33 by navarre           #+#    #+#             */
+/*   Updated: 2023/11/22 11:40:40 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	count_for_malloc(int n)
 {
@@ -56,8 +55,7 @@ char	*ft_itoa(int n)
 	}
 	while (count-- > 0)
 	{
-		i--;
-		str[i] = (n2 % 10) + '0';
+		str[--i] = (n2 % 10) + '0';
 		n2 = n2 / 10;
 	}
 	return (str);

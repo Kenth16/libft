@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:02:46 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 16:57:14 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 11:37:22 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	size_t	j;
 
 	i = 0;
-	if (!s2[i])
+	if (!*s2 || n == 0)
 		return ((char *)s1);
 	while (s1[i] && i < n)
 	{

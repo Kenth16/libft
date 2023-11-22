@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:00:01 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/20 15:38:03 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 12:41:49 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	del(lst->content);
-	free (lst->content);
+	if (!lst || !del)
+		return ;
+	if (lst->content)
+		del(lst->content);
+	free (lst);
 }

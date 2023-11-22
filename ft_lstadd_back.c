@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 14:59:50 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 15:19:31 by navarre          ###   ########.fr       */
+/*   Created: 2023/11/22 11:40:51 by navarre           #+#    #+#             */
+/*   Updated: 2023/11/22 12:00:34 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	while (*lst)
-		*lst = (*lst)->next;
-	*lst = new;
+	if (!*lst)
+		*lst = new;
+	else
+		(*lst)->next = new;
+	new->next = NULL;
 }

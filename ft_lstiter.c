@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:00:19 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/20 15:38:09 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 13:11:02 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    while (lst)
-    {
-		f(lst);
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
 		lst = lst->next;
-    }
+	}
 }

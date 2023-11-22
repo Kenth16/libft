@@ -6,18 +6,18 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:02:38 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/20 15:02:38 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 13:30:50 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while(str[i])
-        i++;
-    return(i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

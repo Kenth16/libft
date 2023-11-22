@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 14:59:57 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 15:19:44 by navarre          ###   ########.fr       */
+/*   Created: 2023/11/22 12:01:07 by navarre           #+#    #+#             */
+/*   Updated: 2023/11/22 13:01:49 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,14 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
+	size_t	*tmp;
+
+	if (!del || !lst)
+		return ;
 	while (*lst)
 	{
-		del(*lst);
-		*lst = (*lst)->next;
-	}	
-	free (*lst);
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		(*lst) = tmp;
+	}
 }

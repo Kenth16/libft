@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 14:59:53 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/20 15:37:46 by navarre          ###   ########.fr       */
+/*   Created: 2023/11/22 12:01:02 by navarre           #+#    #+#             */
+/*   Updated: 2023/11/22 12:01:03 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;
-    *lst = new;
+	*lst = new;
 }

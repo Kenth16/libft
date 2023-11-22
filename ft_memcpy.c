@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:01:46 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 16:25:50 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 13:19:33 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	if (!dest && !src)
 		return (0);
 	while (i < n)
-    {
-        ((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
-        i++;
-    }
-    return(dest);
+	{
+		((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
+		i++;
+	}
+	return (dest);
 }
 /*
 #include<stdio.h>

@@ -6,12 +6,10 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:01:25 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/22 19:23:34 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/23 12:01:39 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <stdio.h>
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))

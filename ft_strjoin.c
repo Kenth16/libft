@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:02:29 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 18:32:06 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/23 12:03:06 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	while (s2[j])
 		str[i++] = s2[j++];
-
 	str[i] = '\0';
 	return (str);
 }

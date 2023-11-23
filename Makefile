@@ -6,7 +6,7 @@
 #    By: navarre <navarre@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/20 15:04:21 by navarre           #+#    #+#              #
-#    Updated: 2023/11/21 15:17:59 by navarre          ###   ########.fr        #
+#    Updated: 2023/11/23 12:33:44 by navarre          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,3 @@ fclean : clean
 
 #fclean + all
 re : fclean all
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)

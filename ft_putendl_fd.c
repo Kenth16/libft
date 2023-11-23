@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:02:01 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/21 18:11:01 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 19:27:59 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putendl_fd(char *s, int fd)
 	if (!s)
 	{
 		write(fd, "\n", 1);
-		return (NULL);
+		return ;
 	}
 	while (s[i])
 	{

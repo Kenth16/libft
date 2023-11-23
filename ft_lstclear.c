@@ -6,7 +6,7 @@
 /*   By: navarre <navarre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 12:01:07 by navarre           #+#    #+#             */
-/*   Updated: 2023/11/22 13:01:49 by navarre          ###   ########.fr       */
+/*   Updated: 2023/11/22 19:06:56 by navarre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	size_t	*tmp;
+	t_list	*tmp;
 
 	if (!del || !lst)
 		return ;

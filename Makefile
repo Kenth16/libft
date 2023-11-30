@@ -6,7 +6,7 @@
 #    By: navarre <navarre@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/20 15:04:21 by navarre           #+#    #+#              #
-#    Updated: 2023/11/23 12:33:44 by navarre          ###   ########.fr        #
+#    Updated: 2023/11/28 12:15:36 by navarre          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ SRC_BONUS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_l
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 NAME = libft.a
-NAME_SO = libft.so
 
 #il va me falloir compiler avec CC CFLAGS et src car on veux transformer les c en o
 #puis ranger tout les .o et les names dans un dossier libft.a avec "ar rc"
@@ -45,3 +44,5 @@ fclean : clean
 
 #fclean + all
 re : fclean all
+
+.PHONY : all clean fclean re bonus
